@@ -54,12 +54,15 @@ Cassius files (with the .cassius file extension) should be syntax highlighted as
 
 The settings are defined in JSON, a very common data structure which makes it pretty simple for any developer to adapt. Let's add the following entry:
 
+settings.json
 ```bash
-"files.associations": {
-  "*.hamlet": "html",
-  "*.julius": "js",
-  "*.cassius": "css"
-}
+
+  "files.associations": {
+        "*.hamlet": "html",
+        "*.julius": "javascript",
+        "*.cassius": "css",
+        "*.lucius": "css",
+      }
 ```
 
 Congratulations! You managed to add Shakespeare Templates support to your VSCode installation. If you open one of the files with the mentioned file extension, your code should be syntax highlighted. (Even if hamlet structure does not require the closing tags, the syntax highlighting works surprisingly well. As well do the flow keywords.)
