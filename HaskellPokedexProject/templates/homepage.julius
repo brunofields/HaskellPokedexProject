@@ -1,34 +1,168 @@
-document.getElementById(#{toJSON aDomId}).innerHTML = "This text was added by the Javascript part of the homepage widget.";
+var isOn, haveResult, btn_shiny, btn_zoomIn, btn_zoomOut, btn_go, div_screen, 
+div_data, btn_on, img, disabledElements, btn_clear, textId, textName, textAbility, textType, param, div_light, div_tutorial, div_error;
 
 $(function() {
-  $("##{rawJS commentFormId}").submit(function(event) {
-    event.preventDefault();
+  isOn = false;
+  haveResult = false;
+  img = $('#img');
+  btn_shiny = $('#btn_shiny');
+  btn_zoomIn = $('#btn_zoom-in');
+  btn_zoomOut = $('#btn_zoom-out');
+  btn_go = $("#btn_go");
+  div_screen = $('#div_screen');
+  div_data = $('#div_data');
+  btn_on = $('#btn_on');
+  btn_clear = $('#btn_clear');
+  textId = $('#text_id');
+  textName = $('#text_name');
+  textAbility = $('#text_ability');
+  textType = $('#text_type');
+  param = $('#pokeInput');
+  div_light = $('#div_light');
+  div_tutorial = $('#div_tutorial');
+  div_error = $('#div_error');
+  disabledElements = document.querySelectorAll('.turnOnOff');
+  
+  btn_zoomIn.click(function() {
+    if(!isOn) {return;}
+    img.addClass("zoom-in");
+  })
 
-    var message = $("##{rawJS commentTextareaId}").val();
-    // (Browsers that enforce the "required" attribute on the textarea won't see this alert)
-    if (!message) {
-      alert("Please fill out the comment form first.");
-      return;
-    }
-
-    // Make an AJAX request to the server to create a new comment
-    $.ajax({
-      url: '@{CommentR}',
-      type: 'POST',
-      contentType: "application/json",
-      data: JSON.stringify({
-        message: message,
-      }),
-      success: function (data) {
-        var newNode = $("<li></li>");
-        newNode.text(data.message);
-        console.log(data);
-        $("##{rawJS commentListId}").append(newNode);
-      },
-      error: function (data) {
-        console.log("Error creating comment: " + data);
-      },
-    });
-
-  });
+  btn_zoomOut.click(function() {
+    if(!isOn) {return;}
+    img.removeClass("zoom-in");
+  })
 });
+
+function showTutorial() {
+  div_tutorial.toggle(600);
+};
+
+function enableElements() {
+  for (var i = 0; i < disabledElements.length; i++) {
+    disabledElements[i].classList.remove('is-disabled');
+  }
+}
+
+function disableElements() {
+  for (var i = 0; i < disabledElements.length; i++) {
+    disabledElements[i].classList.add('is-disabled');
+  }
+}
+
+function turnOnPokedex() {
+  clearData();
+  if(!isOn) {
+    enableElements();
+    randomNumbersData();
+    div_screen.addClass("is-enabled");
+    btn_on.html("OFF");
+    isOn = true;
+  } else {
+    disableElements()
+    div_screen.removeClass("is-enabled");
+    btn_on.html("ON");
+    isOn = false;
+    $(".randomNumber").each(function (index, element) {
+      $(element).off("click");
+    });
+  }
+}
+
+function clearData() {
+  if(!isOn) {return;}
+  haveResult = false;
+  img.attr('src', '');
+  textId.html('');
+  textName.html('');
+  textAbility.html(''); 
+  textType.html('');
+  param.val('');
+}
+
+function randomNumbersData() {
+  $(".randomNumber").each(function (index, element) {
+    var number = Math.floor(Math.random() * 100) + 1;
+    $(element).html(number);
+    $(element).click(function() {
+      getRandomNumber(number);
+    }); 
+  });
+};
+
+function hideLoader() {
+  $('#div_loader').fadeOut();
+  img.fadeIn();
+}
+
+function pokeSubmit(){
+  if(!isOn) {return;}
+  var inputValue = $.trim(param.val());
+  if (inputValue === '') return;
+  div_error.hide();
+  img.hide();
+  $('#div_loader').show();
+  
+  var pokeURL = "https://pokeapi.co/api/v2/pokemon/" + param.val();
+
+  $.ajax({
+    type: "GET",
+    url: pokeURL,
+    success: function(data){ 
+      ajaxSuccess(data);
+      haveResult = true;
+    },
+    error: function(XMLHttpRequest, textStatus, errorThrown) {
+       ajaxError();
+       haveResult = false;
+    }
+  });  
+}
+
+function ajaxSuccess(data){
+  var imageURI = data.sprites.front_default;
+  var imageURIShiny = data.sprites.front_shiny;
+  var id = data.id;  
+  var name = data.name;
+  var ability = data.abilities;
+  var type = data.types;
+  var isShiny = false;
+
+  img.attr('src', imageURI);
+  textId.html(id);
+  textName.html(name);
+  textAbility.html(ability[0].ability.name); 
+  textType.html(type[0].type.name);
+
+  hideLoader();
+
+  btn_shiny.click(function() {
+    if(!haveResult) {return;}
+    if(!isShiny) {
+      btn_shiny.html("Normal");
+      img.attr('src', imageURIShiny);
+      isShiny = true;
+    } else {
+      btn_shiny.html("Shiny");
+      img.attr('src', imageURI);
+      isShiny = false;
+    }
+  });
+
+  btn_clear.click(function() {
+    clearData();
+  });
+}
+
+function ajaxError(data){
+  hideLoader();
+  clearData();
+  div_error.show();
+}
+
+function getRandomNumber(number) {
+  param.val(number);
+  pokeSubmit();
+}
+
+
