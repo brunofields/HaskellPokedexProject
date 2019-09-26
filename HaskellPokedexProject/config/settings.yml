@@ -33,5 +33,5 @@ database:
   database: "_env:YESOD_SQLITE_DATABASE:HaskellPokedexProject.sqlite3"
   poolsize: "_env:YESOD_SQLITE_POOLSIZE:10"
 
-copyright: Insert copyright statement here
+copyright: Developed by Bruno Campos.
 #analytics: UA-YOURCODE
