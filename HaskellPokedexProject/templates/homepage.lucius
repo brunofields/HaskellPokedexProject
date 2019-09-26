@@ -86,8 +86,8 @@ body {
   }
   .pokedex-button {
     position: absolute;
-    bottom: 80px;
-    right: 96px;
+    bottom: 17%;
+    right: 28%;
     height: 32px;
     width: 100px;
     background: transparent;
@@ -114,8 +114,8 @@ body {
   }
   .pokedex-button-zoom-in {
     position: absolute;
-    bottom: 150px;
-    right: 285px;
+    bottom: 26%;
+    right: 42%;
     width: 40px;
     background: transparent;
     border: none;
@@ -127,8 +127,8 @@ body {
   }
   .pokedex-button-zoom-out {
     position: absolute;
-    bottom: 150px;
-    right: 237px;
+    bottom: 26%;
+    right: 38.4%;
     width: 40px;
     background: transparent;
     border: none;
