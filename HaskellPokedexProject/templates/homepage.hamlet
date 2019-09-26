@@ -1,46 +1,47 @@
                         <div class="content">
                                 <button onclick="showTutorial()" class="tutorial-button">Instruções</button>
-                                <div class="pokedex">
-                            <div id="div_light" class="is-disabled turnOnOff pokedex-light">
-                            <div id="div_screen" class="pokedex-screen">
-                            <div id="div_error" class="pokedex-error">Pokemon inválido!<br>Tente novamente!
-                            <div id="div_loader" class="loader">
-                            <div id="div_data" class="is-disabled turnOnOff pokedex-data">
-                                <p class="pokedex-data-text">ID: <span id="text_id">
-                                <p class="pokedex-data-text">Nome: <span id="text_name">
-                                <p class="pokedex-data-text">Habilidade: <span id="text_ability">
-                                <p class="pokedex-data-text">Tipo: <span id="text_type">
-                            
-                            <img class="is-disabled turnOnOff pokedex-img" id="img" src="" alt="">
-                            <button id="btn_on" onclick="turnOnPokedex()" class="pokedex-button-on">ON
-                            <input class="is-disabled turnOnOff pokedex-input" type="text" id="pokeInput">
-                            <button id="btn_go" class="is-disabled turnOnOff pokedex-button" onclick="pokeSubmit()">Go
-                            <button id="btn_shiny" class="is-disabled turnOnOff pokedex-button-shiny">Shiny
-                            <table class="is-disabled turnOnOff pokedex-table">
-                                <tr>
-                                <td class="pokedex-table-cell"><div class="randomNumber">
-                                <td class="pokedex-table-cell"><div class="randomNumber">
-                                <td class="pokedex-table-cell"><div class="randomNumber">
-                                <td class="pokedex-table-cell"><div class="randomNumber">
-                                <td class="pokedex-table-cell"><div class="randomNumber">
-                                
-                                <tr>
-                                <td class="pokedex-table-cell"><div class="randomNumber">
-                                <td class="pokedex-table-cell"><div class="randomNumber">
-                                <td class="pokedex-table-cell"><div class="randomNumber">
-                                <td class="pokedex-table-cell"><div class="randomNumber">
-                                <td class="pokedex-table-cell"><div class="randomNumber">
-                                
-                            
-                            <button id="btn_zoom-in" class="is-disabled turnOnOff pokedex-button-zoom-in">+
-                            <button id="btn_zoom-out" class="is-disabled turnOnOff pokedex-button-zoom-out">-
-                            <button id="btn_clear" class="pokedex-button-clear turnOnOff is-disabled">x
-                            <div id="div_tutorial" class="tutorial">
-                                <div class="tutorial-bubble tutorial-clear">Limpar dados! <span class="tutorial-arrow">&rarr;
-                                <div class="tutorial-bubble tutorial-bubble-blue tutorial-on">Ligar Pokedex! <span class="tutorial-arrow">&rarr;
-                                <div class="tutorial-bubble tutorial-shiny">Versão Shiny! <span class="tutorial-arrow">&rarr;
-                                <div class="tutorial-bubble tutorial-random"><span class="tutorial-arrow">&larr; Pokemon Aleatório!
-                                <div class="tutorial-bubble tutorial-input">Digite o nome de<br>um Pokemon ou um<br>número aleatório! <span class="tutorial-arrow">&rarr;
-                                <div class="tutorial-bubble tutorial-zoom"><span class="tutorial-arrow">&larr; Aumentar ou diminuir zoom!
-                        
-                        
+                                <div id="pokedex">
+                                    <img src="../static/assets/pokedex.png">
+                                        <div id="div_light" class="is-disabled turnOnOff pokedex-light">
+                                        <div id="div_screen" class="pokedex-screen">
+                                        <div id="div_error" class="pokedex-error">Pokemon inválido!<br>Tente novamente!
+                                        <div id="div_loader" class="loader">
+                                        <div id="div_data" class="is-disabled turnOnOff pokedex-data">
+                                            <p class="pokedex-data-text">ID: <span id="text_id">
+                                            <p class="pokedex-data-text">Nome: <span id="text_name">
+                                            <p class="pokedex-data-text">Habilidade: <span id="text_ability">
+                                            <p class="pokedex-data-text">Tipo: <span id="text_type">
+                                        
+                                        <img class="is-disabled turnOnOff pokedex-img" id="img" src="" alt="">
+                                        <button id="btn_on" onclick="turnOnPokedex()" class="pokedex-button-on">ON
+                                        <input class="is-disabled turnOnOff pokedex-input" type="text" id="pokeInput">
+                                        <button id="btn_go" class="is-disabled turnOnOff pokedex-button" onclick="pokeSubmit()">Go
+                                        <button id="btn_shiny" class="is-disabled turnOnOff pokedex-button-shiny">Shiny
+                                        <table class="is-disabled turnOnOff pokedex-table">
+                                            <tr>
+                                            <td class="pokedex-table-cell"><div class="randomNumber">
+                                            <td class="pokedex-table-cell"><div class="randomNumber">
+                                            <td class="pokedex-table-cell"><div class="randomNumber">
+                                            <td class="pokedex-table-cell"><div class="randomNumber">
+                                            <td class="pokedex-table-cell"><div class="randomNumber">
+                                            
+                                            <tr>
+                                            <td class="pokedex-table-cell"><div class="randomNumber">
+                                            <td class="pokedex-table-cell"><div class="randomNumber">
+                                            <td class="pokedex-table-cell"><div class="randomNumber">
+                                            <td class="pokedex-table-cell"><div class="randomNumber">
+                                            <td class="pokedex-table-cell"><div class="randomNumber">
+                                            
+                                        
+                                        <button id="btn_zoom-in" class="is-disabled turnOnOff pokedex-button-zoom-in">+
+                                        <button id="btn_zoom-out" class="is-disabled turnOnOff pokedex-button-zoom-out">-
+                                        <button id="btn_clear" class="pokedex-button-clear turnOnOff is-disabled">x
+                                        <div id="div_tutorial" class="tutorial">
+                                            <div class="tutorial-bubble tutorial-clear">Limpar dados! <span class="tutorial-arrow">&rarr;
+                                            <div class="tutorial-bubble tutorial-bubble-blue tutorial-on">Ligar Pokedex! <span class="tutorial-arrow">&rarr;
+                                            <div class="tutorial-bubble tutorial-shiny">Versão Shiny! <span class="tutorial-arrow">&rarr;
+                                            <div class="tutorial-bubble tutorial-random"><span class="tutorial-arrow">&larr; Pokemon Aleatório!
+                                            <div class="tutorial-bubble tutorial-input">Digite o nome de<br>um Pokemon ou um<br>número aleatório! <span class="tutorial-arrow">&rarr;
+                                            <div class="tutorial-bubble tutorial-zoom"><span class="tutorial-arrow">&larr; Aumentar ou diminuir zoom!
+                                    
+                                    

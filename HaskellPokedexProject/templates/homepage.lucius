@@ -35,12 +35,12 @@ body {
     outline: none;
   }
   
-  .pokedex {
+  /* .pokedex {
     position: relative;
     width: 786px;
     height: 577px;
     background: url('./../assets/pokedex.png') no-repeat;
-  }
+  } */
   .pokedex-screen {
     width: 237px;
     height: 158px;
@@ -140,8 +140,8 @@ body {
   }
   .pokedex-button-on {
     position: absolute;
-    bottom: 125px;
-    left: 45px;
+    bottom: 26.4%;
+    left: 24.2%;
     height: 45px;
     width: 45px;
     border: none;
@@ -174,8 +174,8 @@ body {
   }
   .pokedex-data {
     position: absolute;
-    top: 235px;
-    right: 659px;
+    top: 35.7%;
+    right: 28.5%;
     color: white;
     width: 225px;
   }
