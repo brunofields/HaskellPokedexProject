@@ -182,6 +182,7 @@ body {
   .pokedex-data-text {
     margin: 0;
     color: white;
+    text-transform: capitalize;
     font-size: 15px;
   }
   .pokedex-table {
@@ -200,10 +201,10 @@ body {
   
   .loader {
     display: none;
-    width: 237px;
+    width: 237px;   
     height: 158px;
-    top: 169px;
-    left: 73px;
+    top: 33.44%;
+    left: 26.3%;
     border-radius: 10px;
     transition: 0.5s;
     position: absolute;
