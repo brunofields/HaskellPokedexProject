@@ -1,5 +1,5 @@
                         <div class="content">
-                                <button onclick="showTutorial()" class="tutorial-button">Instruções</button>
+                                <button onclick="showTutorial()" class="tutorial-button">Abrir/Fechar Instruções</button>
                                 <div id="pokedex">
                                     <img src="../static/assets/pokedex.png">
                                         <div id="div_light" class="is-disabled turnOnOff pokedex-light">
