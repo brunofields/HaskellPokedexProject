@@ -24,6 +24,7 @@ stack install yesod-bin --install-ghc
 Build libraries:
 ```bash
  stack build
+ stack build yesod-bin
 ```
 ## Serving
 
