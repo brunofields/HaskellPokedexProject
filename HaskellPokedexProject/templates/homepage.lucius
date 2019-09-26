@@ -168,8 +168,8 @@ body {
   }
   .pokedex-img {
     position: absolute;
-    top: 200px;
-    left: 145px;
+    top: 38%;
+    left: 31.3%;
     transition: 0.5s;
   }
   .pokedex-data {
