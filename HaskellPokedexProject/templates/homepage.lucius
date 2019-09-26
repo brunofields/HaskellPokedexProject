@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    padding-top: 50px;
     height: 100vh;
     background: #ffca00 url("http://brezomadrid.es/Codepen-resources/img/pokedex-wallpaper.jpg") center bottom no-repeat;
     background-size: cover;
@@ -24,7 +23,7 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    font-family: 'Consolas', Arial;
+    font-family: 'Open Sans', Arial;
     font-size: 20px;
     color: white;
     border-radius: 0 0 0 15px;
@@ -36,6 +35,8 @@ body {
   }
   
   .pokedex {
+    padding-top: 50px;
+
     position: relative;
     width: 786px;
     height: 577px;
