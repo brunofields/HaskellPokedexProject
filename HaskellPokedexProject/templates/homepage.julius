@@ -61,6 +61,8 @@ function turnOnPokedex() {
     btn_on.html("OFF");
     isOn = true;
   } else {
+    var b = new Audio('./../static/assets/turnin-off.mp3');
+    b.play();
     disableElements()
     div_screen.removeClass("is-enabled");
     btn_on.html("ON");
