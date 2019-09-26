@@ -1,8 +1,9 @@
-var isOn, haveResult, btn_shiny, btn_zoomIn, btn_zoomOut, btn_go, div_screen, 
+var isOn, haveResult, btn_shiny, btn_zoomIn, btn_zoomOut, btn_go, div_screen, buttonSound, 
 div_data, btn_on, img, disabledElements, btn_clear, textId, textName, textAbility, textType, param, div_light, div_tutorial, div_error;
 
 $(function() {
   isOn = false;
+  buttonSound = new Audio('./../static/assets/button-press.mp3');
   haveResult = false;
   img = $('#img');
   btn_shiny = $('#btn_shiny');
@@ -61,7 +62,7 @@ function turnOnPokedex() {
     btn_on.html("OFF");
     isOn = true;
   } else {
-    var b = new Audio('./../static/assets/turnin-off.mp3');
+    var b = new Audio('./../static/assets/turning-off.mp3');
     b.play();
     disableElements()
     div_screen.removeClass("is-enabled");
@@ -100,6 +101,7 @@ function hideLoader() {
 }
 
 function pokeSubmit(){
+  buttonSound.play();
   if(!isOn) {return;}
   var inputValue = $.trim(param.val());
   if (inputValue === '') return;
