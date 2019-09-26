@@ -228,28 +228,28 @@ body {
     color: white;
   }
   .tutorial-clear {
-    bottom: 203px;
-    left: -132px;
+    bottom: 35%;
+    left: 16%;
   }
   .tutorial-on {
     bottom: 146px;
     left: -192px;
   }
   .tutorial-shiny {
-    bottom: 78px;
-    left: -90px;
+    bottom: 16%;
+    left: 16%;
   }
   .tutorial-random {
-    bottom: 235px;
-    right: -126px;
+    bottom: 40%;
+    right: 5%;
   }
   .tutorial-input {
-    bottom: 77px;
-    left: 287px;
+    bottom: 16%;
+    left: 40%;
   }
   .tutorial-zoom {
-    bottom: 148px;
-    right: -90px;
+    bottom: 26.5%;
+    right: 7%;
   }
   .tutorial-arrow {
     font-size: 25px;
