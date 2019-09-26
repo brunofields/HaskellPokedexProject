@@ -1,7 +1,8 @@
 body {
+    padding-top: 50px;
     margin: 0;
     height: 100vh;
-    background: #ffca00 url("http://brezomadrid.es/Codepen-resources/img/pokedex-wallpaper.jpg") center bottom no-repeat;
+    background: url("../assets/pokedex-background.png") no-repeat;
     background-size: cover;
     font-family: 'Consolas', Arial;
   }
@@ -35,12 +36,10 @@ body {
   }
   
   .pokedex {
-    padding-top: 50px;
-
     position: relative;
     width: 786px;
     height: 577px;
-    background: url('http://brezomadrid.es/Codepen-resources/img/pokedex.png') no-repeat;
+    background: url('./../assets/pokedex.png') no-repeat;
   }
   .pokedex-screen {
     width: 237px;
@@ -64,8 +63,8 @@ body {
     height: 60px;
     border-radius: 50%;
     position: absolute;
-    top: 71px;
-    left: 50px;
+    top: 10.7%;
+    left: 24.5%;
     animation-duration: 1s;
     animation-name: light;
     animation-iteration-count:infinite;
@@ -156,8 +155,8 @@ body {
   }
   .pokedex-button-clear {
     position: absolute;
-    top: 384px;
-    left: 95px;
+    top: 58.3%;
+    left: 27.9%;
     background: transparent;
     border: none;
     font-family: 'Consolas', Arial;
@@ -209,7 +208,7 @@ body {
     transition: 0.5s;
     position: absolute;
     z-index: 10;
-    background: url('http://brezomadrid.es/Codepen-resources/img/pokeball-loader.gif') no-repeat;
+    background: url('./../assets/pokeball-loader.gif') no-repeat;
     background-size: cover;
   }
   

@@ -53,6 +53,8 @@ function disableElements() {
 function turnOnPokedex() {
   clearData();
   if(!isOn) {
+    var a = new Audio('./../static/assets/turnin-on.mp3');
+    a.play();
     enableElements();
     randomNumbersData();
     div_screen.addClass("is-enabled");

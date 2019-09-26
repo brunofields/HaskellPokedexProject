@@ -1,6 +1,6 @@
                         <div class="content">
                                 <button onclick="showTutorial()" class="tutorial-button">Instruções</button>
-                            <div class="pokedex">
+                                <div class="pokedex">
                             <div id="div_light" class="is-disabled turnOnOff pokedex-light">
                             <div id="div_screen" class="pokedex-screen">
                             <div id="div_error" class="pokedex-error">Pokemon inválido!<br>Tente novamente!
