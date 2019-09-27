@@ -1,7 +1,7 @@
 body {
     padding-top: 50px;
     margin: 0;
-    height: 100vh;
+    height: 125vh;
     background: url("../assets/pokedex-background.png") no-repeat;
     background-size: cover;
     font-family: 'Open Sans', Arial;
@@ -42,11 +42,11 @@ body {
     outline: none;
   }
 
-  .pokedex-img{
+  .pokedex-img2{
     position: absolute; 
-    left: 200px; 
-    height: auto; 
-    width: 100%;
+    left: 170px;
+    width: 786px;
+    height: 577px;
   }
   
   /* .pokedex {

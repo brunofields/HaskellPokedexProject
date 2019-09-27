@@ -5,7 +5,7 @@
                        <div class="content">
                                 <button onclick="showTutorial()" class="tutorial-button">Abrir/Fechar Instruções</button>
                                 <div id="pokedex">
-                                    <img class="pokedex-img" src="../static/assets/pokedex.png">
+                                    <img class="pokedex-img2" src="../static/assets/pokedex.png">
                                         <div id="div_light" class="is-disabled turnOnOff pokedex-light">
                                         <div id="div_screen" class="pokedex-screen">
                                         <div id="div_error" class="pokedex-error">Pokemon inválido!<br>Tente novamente!
