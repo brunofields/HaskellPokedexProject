@@ -12,11 +12,11 @@ body {
     display: flex;
     justify-content: center;
   }
-  
+
   .content {
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
   }
   .message {
     position: absolute;
@@ -40,6 +40,13 @@ body {
     border: none;
     cursor: pointer;
     outline: none;
+  }
+
+  .pokedex-img{
+    position: absolute; 
+    left: 200px; 
+    height: auto; 
+    width: 100%;
   }
   
   /* .pokedex {
