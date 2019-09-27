@@ -225,28 +225,28 @@ body {
   color: white;
 }
 .tutorial-clear {
-  bottom: 35%;
-  left: 16%;
+  bottom: 67px;
+  left: 112px;
 }
 .tutorial-on {
-  bottom: 146px;
-  left: -192px;
+  bottom: 11px;
+  left: 59px;
 }
 .tutorial-shiny {
-  bottom: 16%;
-  left: 16%;
+  bottom: -58px;
+  left: 113px;
 }
 .tutorial-random {
-  bottom: 40%;
-  right: 5%;
+  bottom: 100px;
+  left: 874px;
 }
 .tutorial-input {
-  bottom: 16%;
-  left: 40%;
+  top: 594px;
+  left: 448px;
 }
 .tutorial-zoom {
-  bottom: 26.5%;
-  right: 7%;
+  top: 566px;
+  left: 730px;
 }
 .tutorial-arrow {
   font-size: 25px;
@@ -263,7 +263,7 @@ body {
 .zoom-in {
   transform: scale(1.5);
 }
-@keyframes light   {
+@keyframes light    {
   0% {
       background-color: #39beff4a;
       box-shadow: none;
