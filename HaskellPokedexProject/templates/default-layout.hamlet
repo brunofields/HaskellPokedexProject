@@ -1,6 +1,6 @@
 <!-- Page Contents -->
 
-<div .container>
+<div>
     $if not $ Just HomeR == mcurrentRoute
         <ul .breadcrumb>
             $forall bc <- parents
@@ -16,14 +16,13 @@
 $if (Just HomeR == mcurrentRoute)
     ^{widget}
 $else
-    <div .container>
+    <div>
         <div .row>
             <div .col-md-12>
                 ^{widget}
 
 <!-- Footer -->
 <footer .footer>
-    <div .container style="position: absolute; top: 682px; left: 683px;">
-
+    <div>
         <p .text-muted>
             #{appCopyright $ appSettings master}
