@@ -87,7 +87,7 @@ function clearData() {
 
 function randomNumbersData() {
   $(".randomNumber").each(function (index, element) {
-    var number = Math.floor(Math.random() * 100) + 1;
+    var number = Math.floor(Math.random() * 150) + 1;
     $(element).html(number);
     $(element).click(function() {
       getRandomNumber(number);

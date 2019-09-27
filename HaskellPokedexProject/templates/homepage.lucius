@@ -37,6 +37,7 @@ body {
 .pokedex-img2 {
   position: absolute;
   left: 170px;
+  top: 180px;
   width: 786px;
   height: 577px;
 }
@@ -225,15 +226,15 @@ body {
   color: white;
 }
 .tutorial-clear {
-  bottom: 67px;
+  top: 510px;
   left: 112px;
 }
 .tutorial-on {
-  bottom: 11px;
+  top: 568px;
   left: 59px;
 }
 .tutorial-shiny {
-  bottom: -58px;
+  top: 635px;
   left: 113px;
 }
 .tutorial-random {
@@ -263,7 +264,7 @@ body {
 .zoom-in {
   transform: scale(1.5);
 }
-@keyframes light    {
+@keyframes light     {
   0% {
       background-color: #39beff4a;
       box-shadow: none;
