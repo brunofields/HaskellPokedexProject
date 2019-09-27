@@ -1,4 +1,8 @@
-                        <div class="content">
+                       <div class="logo-header">
+                        <img src="https://fontmeme.com/permalink/190927/672a88652518abd2e36ba7f1166b92a1.png" alt="fonte-de-pokemon" border="0">
+                       
+                       
+                       <div class="content">
                                 <button onclick="showTutorial()" class="tutorial-button">Abrir/Fechar Instruções</button>
                                 <div id="pokedex">
                                     <img src="../static/assets/pokedex.png">
