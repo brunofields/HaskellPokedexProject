@@ -107,7 +107,7 @@ body {
   border: none;
   background: #00ad5e;
   color: white;
-  font-family: 'Consolas', Arial;
+  font-family: 'Open Sans', Arial;
   font-size: 30px;
   cursor: pointer;
   outline: none;
