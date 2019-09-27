@@ -1,5 +1,5 @@
 # # Pokedex Haskell Project
-Pokedex website made using haskell's web framework yesod for the functional programming classes at FATEC Rubens Lara for the System's Development and Analysis' degree.
+Pokedex website made using haskell's web framework yesod for the functional programming classes at FATEC Rubens Lara for the System's Development and Analysis' degree, consuming PokeAPI's resources.
 Professor Alexandre Garcia.
 
 # Pokedex
@@ -69,7 +69,10 @@ settings.json
 
 Congratulations! You managed to add Shakespeare Templates support to your VSCode installation. If you open one of the files with the mentioned file extension, your code should be syntax highlighted. (Even if hamlet structure does not require the closing tags, the syntax highlighting works surprisingly well. As well do the flow keywords.)
 
+## Credits
 
+Special thanks to the whole PokeAPI dev team for creating such an amazing project.
+Full Documentation @ https://pokeapi.co/docs/v2.html
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
