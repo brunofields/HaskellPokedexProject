@@ -55,8 +55,8 @@ body {
   display: none;
   text-align: center;
   position: absolute;
-  top: 42%;
-  left: 30%;
+  top: 49.5%;
+  left: 18%;
 }
 .pokedex-light {
   width: 58px;
@@ -238,7 +238,7 @@ body {
   left: 113px;
 }
 .tutorial-random {
-  bottom: 100px;
+  bottom: 297px;
   left: 874px;
 }
 .tutorial-input {

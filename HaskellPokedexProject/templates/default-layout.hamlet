@@ -22,7 +22,3 @@ $else
                 ^{widget}
 
 <!-- Footer -->
-<footer .footer>
-    <div>
-        <p .text-muted>
-            #{appCopyright $ appSettings master}
