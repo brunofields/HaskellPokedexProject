@@ -2,7 +2,7 @@ body {
   padding-top: 50px;
   margin: 0;
   height: 125vh;
-  background: url("../assets/pokedex-background.png") no-repeat;
+  background: url("../static/assets/pokedex-background.png") no-repeat;
   background-size: cover;
   font-family: 'Open Sans', Arial;
 }
@@ -208,7 +208,7 @@ body {
   transition: 0.5s;
   position: absolute;
   z-index: 10;
-  background: url('./../assets/pokeball-loader.gif') no-repeat;
+  background: url('./../static/assets/pokeball-loader.gif') no-repeat;
   background-size: cover;
 }
 .tutorial {
